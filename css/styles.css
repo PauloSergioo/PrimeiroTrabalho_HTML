@@ -36,20 +36,6 @@ header {
 
 /* SPECIFIC ELEMENTS  */
 
-@media (max-width: 768px) {
-  .ul-container li {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .title-nav {
-    font-size: 24px;
-  }
-}
-
-/*    */
-
 .container {
   width: 100%;
   max-width: 990px;
@@ -70,7 +56,7 @@ header {
 }
 
 .ul-container li {
-  margin: 15px;
+  display: none;
 }
 
 .ul-container {
@@ -87,6 +73,7 @@ header {
   font-size: 24px;
   text-align: center;
   margin-top: 40px;
+  color: var(--dark-gray);
 }
 
 .card-container {
@@ -217,7 +204,7 @@ header {
 }
 
 .inscription-title {
-  margin: 40px 0px 16px 45px;
+  margin: 40px 0 16px 0;
   font-size: 24px;
   color: var(--dark-gray);
 }
@@ -227,7 +214,8 @@ header {
   height: 655px;
   display: flex;
   align-items: center;
-  margin: 0px 10px;
+  margin: 0px auto;
+  justify-content: center;
 }
 
 .registration-box {
@@ -313,7 +301,7 @@ form {
   font-size: 18px;
   padding: 20px auto;
   font: bold;
-  margin: 20px 0px;
+  margin: 20px auto;
 }
 
 footer {
@@ -323,9 +311,7 @@ footer {
 
 .footer-container {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   color: var(--white);
   text-align: center;
   padding: 28px 33px 0px 33px;
@@ -344,4 +330,111 @@ address {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .title-nav {
+    font-size: 24px;
+  }
+
+  .ul-container li {
+    margin: 15px;
+    display: flex;
+  }
+
+  .card-container h2 {
+    font-size: 24px;
+  }
+
+  .card-container h3 {
+    font-size: 16px;
+  }
+
+  .title-games {
+    font-size: 36px;
+  }
+
+  
+  .inscription-title {
+    font-size: 36px;
+  }
+
+  .registrations-container {
+    max-width: 990px;
+    width: 100%;
+    margin-bottom: 61px;
+  }
+
+  form {
+    height: 522px;
+    width: 790px;
+    margin: 0 auto;
+  }
+
+  #crtl-name {
+    width: 642px;
+  }
+
+  #crtl-email {
+    width: 642px;
+  }
+
+  .search-title {
+    color: var(--dark-gray);
+    margin: 0px 75px 8px 75px;
+  }
+  
+  .container-preference {
+    margin: 0px 75px 30px 75px;
+   
+  }
+  
+  .news-box {
+    margin: 0px 75px 38px 75px;
+  }
+  
+  .box-commit {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 52px;
+  
+  }
+
+  .to-send {
+    margin: 0 auto;
+    margin-right: 26px;
+  }
+
+  .clean {
+    margin: 0 auto;
+    margin-left: 26px;
+  }
+
+  .title-news h1 {
+    font-size: 36px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .games-container {
+    display: flex;
+    flex-direction: row;
+    height:559px;
+    justify-content: center;
+  }
+
+  .games-block {
+    margin: 15px;
+  }
+
 }
